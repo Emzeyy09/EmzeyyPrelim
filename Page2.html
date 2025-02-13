@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects Taken - Page 2</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { overflow: hidden; }
+    .container {
+      flex: 1;
+      margin-left: 270px;
+      padding: 20px 10px;
+      width: calc(100% - 270px);
+      text-align: center;
+      max-height: 100vh;
+      overflow: hidden;
+    }
+    h1 { margin-bottom: 5px; text-align: center; }
+    h2 { margin-top: 5px; margin-bottom: 20px; text-align: center; color: #ccc; font-size: 1.2rem; }
+    .table-box {
+      background: linear-gradient(45deg, blue, black);
+      padding: 20px;
+      border-radius: 30px;
+      margin: 20px 50px;
+      max-width: 1000px;
+    }
+    table { width: 100%; border-collapse: collapse; background-color: #000; color: #fff; }
+    thead { background-color: #222; }
+    thead th, tbody td { border: 1px solid #444; padding: 12px; text-align: left; }
+    tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.3); }
+    .pagination {
+      text-align: center;
+      margin: 20px auto;
+    }
+    .pagination a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 8px 12px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      
+    }
+    .pagination a.active { background: blue; }
+    .pagination a:hover { background: #444; }
+    .footer-text { margin-top: 20px; text-align: center; color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <button class="nav-btn" onclick="location.href='index.html'">About Me</button>
+    <button class="nav-btn active">Subject Taken</button>
+    <button class="nav-btn" onclick="location.href='Currentsubject.html'">Currently Enrolled</button>
+    <button class="nav-btn" onclick="location.href='Contactme.html'">Contact Me</button>
+    <button class="nav-btn" onclick="location.href='Favorites.html'">My Favorites</button>
+    <button class="nav-btn" onclick="location.href='Gallery.html'">Gallery</button>
+  </div>
+  <div class="container">
+    <div class="page-content">
+      <h1>Subjects Taken</h1>
+      <h2>Second Semester - 2023-2024</h2>
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Subject</th>
+              <th>Schedule</th>
+              <th>Room</th>
+              <th>Units</th>
+              <th>Instructor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CSIT 3</td>
+              <td>Intermediate Programming / Computer Programming 2</td>
+              <td>MW 08:30 / 10:00</td>
+              <td>HF305 - HF304</td>
+              <td>3</td>
+              <td>Orong, Markdy Yuag</td>
+            </tr>
+            <tr>
+              <td>ITP 1</td>
+              <td>IT Fundamentals</td>
+              <td>TTH 02:35 / 04:05</td>
+              <td>HF306</td>
+              <td>3</td>
+              <td>Lumasag, Jerry Maghuyop</td>
+            </tr>
+            <tr>
+              <td>ITP 2</td>
+              <td>Discrete Mathematics</td>
+              <td>MW 02:35 / 04:05</td>
+              <td>HF305</td>
+              <td>3</td>
+              <td>Orong, Markdy Yuag</td>
+            </tr>
+            <tr>
+              <td>MATH 1</td>
+              <td>Mathematics in the Modern World</td>
+              <td>MW 01:00 / 02:30</td>
+              <td>A202</td>
+              <td>3</td>
+              <td>Beringuel, Eugene Gervacio</td>
+            </tr>
+            <tr>
+              <td>NSTP 12L</td>
+              <td>NSTP 2 - Literacy Training Service II</td>
+              <td>SAT 01:00 / 04:00</td>
+              <td>S203</td>
+              <td>3</td>
+              <td>Tabil, Robelyn Jane D.</td>
+            </tr>
+            <tr>
+              <td>PE 2</td>
+              <td>Path Fit 2: Fitness Training</td>
+              <td>FRI 08:00 / 10:00</td>
+              <td>CCRT</td>
+              <td>2</td>
+              <td>Amil, Centhony L.</td>
+            </tr>
+            <tr>
+              <td>EP 1S</td>
+              <td>English Proficiency - Start I</td>
+              <td>TTH 05:45 / 07:15</td>
+              <td>HF205</td>
+              <td>3</td>
+              <td>Cuenca, Joseph C.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination">
+        <a href="subject.html">&lt;</a> <!-- Balik sa Page 1 -->
+        <a href="subject.html">1</a>
+        <a href="page2.html" class="active">2</a>
+        <a href="page3.html">3</a>
+        <a href="page3.html">&gt;</a> <!-- Next to Page 3 -->
+      </div>
+      
+      <div class="footer-text">© 2023 Emjay Raot-Raot</div>
+    </div>
+  </div>
+</body>
+</html>

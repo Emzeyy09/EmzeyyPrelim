@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects Taken - Page 3</title> 
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { overflow: hidden; }
+    .container {
+      flex: 1;
+      margin-left: 270px;
+      padding: 20px 10px;
+      width: calc(100% - 270px);
+      text-align: center;
+      max-height: 100vh;
+      overflow: hidden;
+    }
+    h1 { margin-bottom: 5px; text-align: center; }
+    h2 { margin-top: 5px; margin-bottom: 20px; text-align: center; color: #ccc; font-size: 1.2rem; }
+    .table-box {
+      background: linear-gradient(45deg, blue, black);
+      padding: 20px;
+      border-radius: 30px;
+      margin: 20px 50px;
+      max-width: 950px;
+    }
+    table { width: 100%; border-collapse: collapse; background-color: #000; color: #fff; }
+    thead { background-color: #222; }
+    thead th, tbody td { border: 1px solid #444; padding: 12px; text-align: left; }
+    tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.3); }
+    .pagination {
+      text-align: center;
+      margin: 20px auto;
+    }
+    .pagination a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 8px 12px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    
+    }
+    .pagination a.active { background: blue; }
+    .pagination a:hover { background: #444; }
+    .footer-text { margin-top: 20px; text-align: center; color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <button class="nav-btn" onclick="location.href='index.html'">About Me</button>
+    <button class="nav-btn active">Subject Taken</button>
+    <button class="nav-btn" onclick="location.href='Currentsubject.html'">Currently Enrolled</button>
+    <button class="nav-btn" onclick="location.href='Contactme.html'">Contact Me</button>
+    <button class="nav-btn" onclick="location.href='Favorites.html'">My Favorites</button>
+    <button class="nav-btn" onclick="location.href='Gallery.html'">Gallery</button>
+  </div>
+  <div class="container">
+    <div class="page-content">
+      <h1>Subjects Taken</h1>
+      <h2>First Semester - 2024-2025</h2>
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Subject</th>
+              <th>Schedule</th>
+              <th>Room</th>
+              <th>Units</th>
+              <th>Instructor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ITP 3</td>
+              <td>Networking 1 (CISCO 1: Networking Basics)</td>
+              <td>TTH 08:30 / 09:30</td>
+              <td>HF305 - HF202</td>
+              <td>3</td>
+              <td>Paredes, Rolysent Kundiman</td>
+            </tr>
+            <tr>
+              <td>ITEL 1A</td>
+              <td>IT Elective 1: Platform Technologies</td>
+              <td>MW 08:30 / 10:00</td>
+              <td>HF307 - HF304</td>
+              <td>3</td>
+              <td>Talirongan, Hidear</td>
+            </tr>
+            <tr>
+              <td>ITEL 2A</td>
+              <td>IT Elective 2: Object-Oriented Programming</td>
+              <td>TTH 04:10 / 05:10</td>
+              <td>HF306 - HF304</td>
+              <td>3</td>
+              <td>Lumasag, Jerry Maghuyop</td>
+            </tr>
+            <tr>
+              <td>PE 3</td>
+              <td>Path Fit 3: Sports (Individual/Dual)</td>
+              <td>F 06:00 / 10:00</td>
+              <td>Pool</td>
+              <td>2</td>
+              <td>Dolocanog, Mellin Jan M.</td>
+            </tr>
+            <tr>
+              <td>HIST 1</td>
+              <td>Readings in Philippine History</td>
+              <td>F 02:20 / 05:30</td>
+              <td>M306</td>
+              <td>3</td>
+              <td>Daniel, Mhie Baldesanso</td>
+            </tr>
+            <tr>
+              <td>SOC ECON 1</td>
+              <td>The Contemporary World</td>
+              <td>F 11:10 / 02:10</td>
+              <td>RC401</td>
+              <td>3</td>
+              <td>Emperio III, Catalino Laranjo</td>
+            </tr>
+            <tr>
+              <td>CSIT 4</td>
+              <td>Data Structures and Algorithms</td>
+              <td>MW-TTH 11:10 / 05:10</td>
+              <td>HF305 - HF202</td>
+              <td>3</td>
+              <td>Caroro, Roseclaremath Aviso</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination">
+        <a href="page2.html">&lt;</a> <!-- Balik sa Page 2 -->
+        <a href="subject.html">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html" class="active">3</a>
+        <a href="subject.html">&gt;</a> <!-- Balik sa Page 1 -->
+      </div>
+      <div class="footer-text">© 2023 Emjay Raot-Raot</div>
+    </div>
+  </div>
+</body>
+</html>

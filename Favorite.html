@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorites</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .favorites-container {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+    .favorites-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .favorites-grid li {
+      list-style: none;
+      background: rgb(43, 42, 42);
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .favorites-grid li strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    h1 {
+      text-align: center;
+    }
+    h1 span {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <button class="nav-btn" onclick="location.href='index.html'">About Me</button>
+    <button class="nav-btn" onclick="location.href='Subject.html'">Subject Taken</button>
+    <button class="nav-btn" onclick="location.href='Currentsubject.html'">Currently Enrolled</button>
+    <button class="nav-btn" onclick="location.href='Contactme.html'">Contact Me</button>
+    <button class="nav-btn active">My Favorites</button>
+    <button class="nav-btn" onclick="location.href='Gallery.html'">Gallery</button>
+  </div>
+
+  <div class="container">
+    <div class="page-content">
+      <h1>My <span>Favorites</span></h1>
+      <div class="favorites-container">
+        <ul class="favorites-grid">
+          <li><strong>My Favorite Animal:</strong> Cat</li>
+          <li><strong>My Favorite to Watch:</strong> Anime</li>
+          <li><strong>My Favorite Game:</strong> Counter Strike</li>
+          <li><strong>My Favorite Place:</strong> Japan</li>
+          <li><strong>My Favorite Sport:</strong> Volleyball</li>
+          <li><strong>My Favorite Movie:</strong> Avengers</li>
+          <li><strong>My Favorite Food:</strong> Pizza</li>
+          <li><strong>My Favorite Color:</strong> Black/White</li>
+          <li><strong>My Favorite Drinks:</strong> C2</li>
+          <li><strong>My Favorite Song Genre:</strong> Pop Music</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
